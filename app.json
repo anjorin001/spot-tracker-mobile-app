@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "spot-tracker-mobile-app",
-    "slug": "spot-tracker-mobile-app",
+    "slug": "spot-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "spottrackermobileapp",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -38,11 +38,25 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "SpotLog uses your location to tag where you saved a spot."
+        }
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f8d729ec-042e-47cd-bb95-ea65ab72fad8"
+      }
+    },
+    "owner": "anjorin-favour"
   }
 }
